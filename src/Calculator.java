@@ -3,7 +3,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 
+
 public class Calculator {
+    public RomanNumeral romanNumeral;
+
 
     static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
     static String a;
@@ -41,8 +44,8 @@ public class Calculator {
             return num1;
         }
         else if(a.equals(RomanNumeral.values())){
-            int num1 = a.
-        }
+            int num1 = GetRomanNumber();
+       }
         else System.out.println("Error, while entering first num. Try again");
         int num1 = getNum1(); // рекурсия
         return num1;
@@ -51,6 +54,9 @@ public class Calculator {
     public static int getNum2() throws IOException {
         if (!c.isEmpty()) {
             int num2 = Integer.parseInt(c);
+        }
+        else if (c.equals(RomanNumeral.values())){
+            int num2 = GetRomanNumber();
         }
         else System.out.println("Error, while entering second num. Try again");
         int num2 = getNum2();

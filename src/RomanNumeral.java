@@ -20,11 +20,11 @@ public enum RomanNumeral {
         return key;
     }
 
-    int toInt(String key) {
-        for (RomanNumeral i : this.values())
-            if (i.getKey().equals(key))
-                return i.getValue();
-        return 0;
-    }
+//    int toInt(String key) {
+//        for (RomanNumeral i : this.values())
+//            if (i.getKey().equals(key))
+//                return i.getValue();
+//        return 0;
+//    }
 
 }
